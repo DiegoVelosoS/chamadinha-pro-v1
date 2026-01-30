@@ -1,0 +1,7 @@
+backend/
+├── app/
+│   ├── __init__.py
+│   ├── database.py      # Conexão com o Banco
+│   └── models.py        # Tabelas (Aluno, Financeiro)
+├── main.py              # Onde o app liga
+└── requirements.txt

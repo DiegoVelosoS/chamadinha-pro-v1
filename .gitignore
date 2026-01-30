@@ -1,0 +1,20 @@
+# Ignorar ambiente virtual Python
+backend/.venv/
+__pycache__/
+*.pyc
+
+# Ignorar dependências do Node.js (Frontend)
+frontend/node_modules/
+frontend/dist/
+
+# Ignorar banco de dados local (se for apenas para dev)
+*.db
+*.sqlite3
+backend/chamadinha.db
+
+# Ignorar uploads de imagens (Dados sensíveis e pesados)
+backend/uploads/
+
+# Ignorar arquivos de sistema
+.DS_Store
+.tmp.driveupload/

@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]  # Servidor para rodar o app
+sqlmodel           # Banco de dados (ORM moderno)
+face_recognition   # Modelo de IA. Requer CMake instalado no sistema
+numpy              # Para lidar com os vetores da face
+python-multipart   # Para receber upload de fotos

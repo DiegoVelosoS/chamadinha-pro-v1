@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamadinha - Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0d0d0d; /* Fundo bem escuro */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+        }
+
+        .login-container {
+            width: 100%;
+            max-width: 350px; /* Largura típica de mobile */
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        /* Estilo do Ícone de Câmera */
+        .icon-circle {
+            background-color: #1c1c1e;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 20px auto;
+        }
+
+        .icon-circle i {
+            font-size: 3rem;
+            color: #e0e0e0;
+        }
+
+        /* Estilo dos Inputs */
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input {
+            width: 100%;
+            padding: 15px;
+            background-color: #1c1c1e; /* Cinza escuro dos inputs */
+            border: none;
+            border-radius: 12px;
+            color: #fff;
+            font-size: 1rem;
+            outline: none;
+        }
+
+        input::placeholder {
+            color: #6e6e73;
+        }
+
+        input:focus {
+            border: 1px solid #2ecc71; /* Detalhe verde ao clicar */
+        }
+
+        /* Link "Esqueci minha senha" */
+        .forgot-password {
+            text-align: right;
+            font-size: 0.9rem;
+            margin-top: -10px; /* Aproximar do input */
+        }
+
+        .forgot-password a {
+            color: #e0e0e0;
+            text-decoration: underline;
+        }
+
+        /* Botão Entrar */
+        .btn-enter {
+            width: 100%;
+            padding: 15px;
+            background-color: #28a745; /* O verde vibrante da imagem */
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+            text-transform: uppercase;
+        }
+
+        .btn-enter:hover {
+            background-color: #218838;
+        }
+
+        /* Rodapé "Criar Conta" */
+        .footer-link {
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        .footer-link a {
+            color: #fff;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h1>LOGIN</h1>
+
+        <div class="icon-circle">
+            <i class="fas fa-camera"></i>
+        </div>
+
+        <form action="/login" method="POST" class="input-group">
+            <input type="text" name="username" placeholder="Usuário ou Email" required>
+            
+            <input type="password" name="password" placeholder="Senha (********)" required>
+
+            <div class="forgot-password">
+                <a href="#">Esqueci minha senha</a>
+            </div>
+
+            <button type="submit" class="btn-enter">ENTRAR</button>
+        </form>
+
+        <div class="footer-link">
+            Ainda não tem conta? <a href="#">Criar Conta</a>
+        </div>
+    </div>
+
+</body>
+</html>
